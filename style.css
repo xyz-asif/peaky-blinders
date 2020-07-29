@@ -1,0 +1,157 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+.name {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+.intro {
+  grid-column: 2/6;
+  grid-row: 5/7;
+}
+
+.btn {
+  grid-column: 2/6;
+  grid-row: 7/8;
+}
+img {
+  width: 450px;
+  height: 750px;
+}
+.img {
+  position: absolute;
+  right: 223px;
+  top: 123px;
+}
+.name h3 {
+  border-bottom: 1px solid white;
+  font-family: "Cormorant SC", serif;
+  font-size: 72px;
+  font-weight: normal;
+  width: 70%;
+}
+.name i {
+  color: rgb(57, 176, 202);
+}
+.intro {
+  font-family: "Ovo", serif;
+  font-size: 25px;
+  margin-top: 38px;
+}
+
+.btn button {
+  border-radius: 10px;
+  border-color: rgb(57, 176, 202);
+  color: white;
+  background-color: black;
+  width: 115px;
+  height: 43px;
+  font-family: "Ovo", serif;
+  font-size: 24px;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: black;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    background-color: black;
+    color: white;
+  }
+  .name {
+    grid-column: 2/6;
+    grid-row: 3/4;
+  }
+
+  .intro {
+    grid-column: 2/12;
+    grid-row: 4/6;
+  }
+
+  .btn {
+    grid-column: 2/12;
+    grid-row: 6/7;
+  }
+
+  img {
+    width: 246px;
+    height: 401px;
+  }
+
+  .img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  /* don't touch */
+  /* style */
+  .name h3 {
+    border-bottom: 1px solid white;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+  }
+
+  .name i {
+    color: rgb(57, 176, 202);
+  }
+  /* font-family: 'Cormorant Garamond', serif;
+font-family: 'Ovo', serif; */
+  /* style */
+  .intro {
+    font-family: "Ovo", serif;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .btn button {
+    border-radius: 10px;
+    border-color: rgb(57, 176, 202);
+    color: white;
+    background-color: black;
+    width: 70px;
+    height: 25px;
+    font-family: "Ovo", serif;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .name {
+    grid-column: 2/6;
+    grid-row: 2/3;
+  }
+
+  .intro {
+    grid-column: 2/12;
+    grid-row: 3/5;
+  }
+
+  .btn {
+    grid-column: 2/12;
+    grid-row: 5/6;
+  }
+  img {
+    width: 206px;
+    height: 350px;
+  }
+}
